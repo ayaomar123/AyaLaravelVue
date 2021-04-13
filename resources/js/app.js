@@ -12,6 +12,8 @@ import VueAxios from 'vue-axios';
 import VueRouter from 'vue-router';
 import axios from 'axios';
 import { routes } from './routes/routes';
+import VueSweetalert2 from "vue-sweetalert2";
+// import Pagination from 'vue-pagination-2';
 
 
 /**
@@ -22,6 +24,8 @@ import { routes } from './routes/routes';
 
 Vue.use(VueRouter);
 Vue.use(VueAxios, axios);
+Vue.use(VueSweetalert2);
+// Vue.component('pagination', Pagination);
 
 const router = new VueRouter({
     mode: 'history',
