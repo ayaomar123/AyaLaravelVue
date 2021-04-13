@@ -7,11 +7,11 @@
 require('./bootstrap');
 window.Vue = require('vue');
 import Vue from 'vue'
-import App from './App.vue';
+import App from './components/app.vue';
 import VueAxios from 'vue-axios';
 import VueRouter from 'vue-router';
 import axios from 'axios';
-import { routes } from './routes';
+import { routes } from './routes/routes';
 
 
 /**

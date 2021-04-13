@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\CategoryController;
+use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,4 +19,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('api')->group(function () {
     Route::resource('products', ProductController::class);
+    Route::get('categories', [CategoryController::class,'index']);
+    Route::apiResource('posts', PostController::class);
+
 });
+
